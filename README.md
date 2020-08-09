@@ -1,7 +1,9 @@
 
 # Field editor in table view
 
-Hello in this oportunity want to leave for your programs an application that will allow you, in the tables view, to quickly edit the fields.
+Submodulo para Landini Admin Template for AppGini
+
+Application that will allow you, in the tables view, to quickly edit the fields.
 
 Updating this information via ajax.
 
@@ -9,9 +11,11 @@ On the server side it has all the security that appgini offers with respect to t
 
 ## Install
 
-download from github repository:
+Install via submodule
 
-[https://github.com/myappgini/tvedit](https://github.com/myappgini/tvedit)
+``$ git submodule add git@github.com:myappgini/sbm_tvedit.git tvedit``
+``$ git submodule add git@github.com:myappgini/sbm_plugins.git plugins``
+
 
 ## Setup
 
@@ -19,8 +23,8 @@ First of all you have to register the js libraries for them to run.
 Find and edit the `header-extras.php` file inside the hooks folder.
 Add the following two command lines:
   
-    <script  src = "<?php echo PREPEND_PATH;?>LAT/plugins/jquery-jeditable/jquery.jeditable.js"></script>
-    <script  src = "<?php echo PREPEND_PATH;?>LAT/tvedit/tv.edit.js"></script>
+    <script  src = "<?php echo PREPEND_PATH;?>PATH_TO/plugins/jquery-jeditable/jquery.jeditable.js"></script>
+    <script  src = "<?php echo PREPEND_PATH;?>PATH_TO/tvedit/tv.edit.js"></script>
 
 To be activated within the table view you need you must write within the table tablename-tv.js (you must create a new one if it is not found) the following command lines:
 
