@@ -13,8 +13,8 @@ On the server side it has all the security that appgini offers with respect to t
 
 Install via git submodule
 
-``$ git submodule add git@github.com:myappgini/sbm_tvedit.git tvedit``
-``$ git submodule add git@github.com:myappgini/sbm_plugins.git plugins``
+    $ git submodule add git@github.com:myappgini/sbm_tvedit.git tvedit
+    $ git submodule add git@github.com:myappgini/sbm_plugins.git plugins
 
 
 ## Setup
