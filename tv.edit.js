@@ -45,8 +45,9 @@ function tv_editlets(tn, ingnore = []) { //ignore has field name with ignore
 };
 
 function add_buttons(tn) {
-    $j('thead tr th:first-child').css('width', '80px');
-    $j('tbody > tr td:first-child').each(function() {
+    $j('tr td[id^="' + tn + '"]').closest('table').addClass('table-tve');
+    $j('table.table-tve thead tr th:first-child').css('width', '80px');
+    $j('table.table-tve tbody tr td:first-child').each(function() {
         $j(this).append('<a style="color: rgba(0,0,0,.5);margin: 5px;" href="' + tn + '_view.php?SelectedID=' + $j(this).closest('tr').attr('data-id') + '"><i class="fa fa-edit"></i></a>');
     })
-};
+}
